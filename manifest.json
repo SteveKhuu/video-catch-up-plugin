@@ -1,0 +1,11 @@
+{
+  "name": "Video Catch Up",
+  "version": "1.0",
+  "description": "Automatically plays video at 1.5x speed and slows it down to 1x when the current play time is near the end of the buffered content.",
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["catch_up.js"],
+    "all_frames": true
+  }],
+  "manifest_version": 2
+}
